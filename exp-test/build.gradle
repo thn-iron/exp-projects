@@ -1,0 +1,22 @@
+group 'exp.projects'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+
+}
+
+dependencies {
+    compile 'exp.projects:exp-protobuf:latest.integration'
+
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+
+task listJars << {
+    configurations.compile.each { File file -> println file.name }
+}
