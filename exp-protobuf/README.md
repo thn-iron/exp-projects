@@ -2,6 +2,7 @@
 
 Experimenting code auto-generation from .proto file(s)
 
+```bash
 # source location
 src/main/proto
 
@@ -13,3 +14,4 @@ build/generated/source/proto/main/java
 
 # to publish locally
 ./gradlew install
+```
