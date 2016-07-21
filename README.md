@@ -1,1 +1,1 @@
-# exp-projects
+# playground for experimentation
