@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "exp.protobuf";
+option java_outer_classname = "PersonProto";
+
+import "address.proto";
+
+message Person {
+    string firstName = 1;
+    string lastName = 2;
+    int32 age = 3;
+    Address addressInfo = 4;
+}

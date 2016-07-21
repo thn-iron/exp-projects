@@ -1,0 +1,34 @@
+group 'exp.projects'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    repositories {
+        mavenCentral()
+        mavenLocal()
+        maven {
+            url 'https://plugins.gradle.org/m2/'
+        }
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.google.protobuf:protobuf-gradle-plugin:0.7.7'
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'com.google.protobuf'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    compile 'com.google.protobuf:protobuf-java:3.0.0-beta-3'
+}
+
+task listJars << {
+    configurations.compile.each { File file -> println file.name }
+}

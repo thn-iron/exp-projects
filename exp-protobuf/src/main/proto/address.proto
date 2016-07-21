@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "exp.protobuf";
+option java_outer_classname = "AddressProto";
+
+message Address {
+    string address1 = 1;
+    string address2 = 2;
+    string city = 3;
+    string state = 4;
+    string zip = 5;
+}
