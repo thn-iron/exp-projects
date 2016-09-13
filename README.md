@@ -3,7 +3,7 @@
 ## projects
 - **exp-protobuf** - experimenting protobuf
 
-- **ex-protobuf-go-java** - experimenting protobuf, grpc-go and grpc-java altogether
+- **exp-grpc** - experimenting grpc with go and java
 
 - **exp-test** - project to test other exp-&lt;project&gt;
 
